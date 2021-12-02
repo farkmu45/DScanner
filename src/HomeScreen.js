@@ -29,8 +29,8 @@ export default function HomeScreen({navigation}) {
           style={{
             color: 'black',
             fontSize: 40,
-            letterSpacing: -2,
-            fontWeight: 'bold',
+            letterSpacing: -0.5,
+            fontWeight: '900',
             marginTop: 30,
           }}>
           DScanner
@@ -39,7 +39,7 @@ export default function HomeScreen({navigation}) {
           style={{
             lineHeight: 23,
             color: 'black',
-            fontSize: 17,
+            fontSize: 18,
             fontWeight: '500',
             marginTop: 12,
           }}>
