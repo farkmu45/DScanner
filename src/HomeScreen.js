@@ -83,7 +83,7 @@ export default function HomeScreen({navigation}) {
               marginRight: 6,
             }}>
             <Pressable
-              onPress={() => goToUnity('unitydl://ar')}
+              onPress={() => goToUnity('unitydl://dscanner')}
               style={{width: 60, height: 60, backgroundColor: '#DC6666'}}
               android_ripple={{color: 'white', borderless: false}}>
               <Image
