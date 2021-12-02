@@ -1,6 +1,6 @@
-import {DefaultTheme} from '@react-navigation/native'
-import AnimatedLottieView from 'lottie-react-native'
-import React from 'react'
+import {DefaultTheme} from '@react-navigation/native';
+import AnimatedLottieView from 'lottie-react-native';
+import React from 'react';
 import {
   View,
   Text,
@@ -8,7 +8,19 @@ import {
   Pressable,
   Image,
   SafeAreaView,
-} from 'react-native'
+  Alert,
+  Linking,
+} from 'react-native';
+
+function goToUnity(link) {
+  Linking.openURL(link).catch(err => {
+    Alert.alert('Error', 'Harap install aplikasi AR untuk DScanner', [
+      {
+        text: 'OK',
+      },
+    ]);
+  });
+}
 
 export default function HomeScreen({navigation}) {
   return (
@@ -71,7 +83,7 @@ export default function HomeScreen({navigation}) {
               marginRight: 6,
             }}>
             <Pressable
-              onPress={() => navigation.navigate('AR')}
+              onPress={() => goToUnity('unitydl://ar')}
               style={{width: 60, height: 60, backgroundColor: '#DC6666'}}
               android_ripple={{color: 'white', borderless: false}}>
               <Image
@@ -116,5 +128,5 @@ export default function HomeScreen({navigation}) {
         </View>
       </View>
     </SafeAreaView>
-  )
+  );
 }
