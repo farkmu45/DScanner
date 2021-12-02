@@ -42,8 +42,8 @@ export default function HomeScreen({navigation}) {
             color: 'black',
             fontSize: 40,
             letterSpacing: -1,
-            fontWeight: '900',
             marginTop: 30,
+            fontFamily: 'Inter-Bold',
           }}>
           DScanner
         </Text>
@@ -51,10 +51,9 @@ export default function HomeScreen({navigation}) {
           style={{
             lineHeight: 23,
             color: 'black',
-            letterSpacing: -0.5,
             fontSize: 18,
-            fontWeight: '500',
             marginTop: 12,
+            fontFamily: 'Inter-Medium',
           }}>
           Welcome to DScanner App by Project D and F2!
         </Text>
