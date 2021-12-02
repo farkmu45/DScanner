@@ -29,7 +29,7 @@ export default function HomeScreen({navigation}) {
           style={{
             color: 'black',
             fontSize: 40,
-            letterSpacing: -0.5,
+            letterSpacing: -1,
             fontWeight: '900',
             marginTop: 30,
           }}>
@@ -39,6 +39,7 @@ export default function HomeScreen({navigation}) {
           style={{
             lineHeight: 23,
             color: 'black',
+            letterSpacing: -0.5,
             fontSize: 18,
             fontWeight: '500',
             marginTop: 12,
