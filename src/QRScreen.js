@@ -4,7 +4,7 @@ import QRCodeScanner from 'react-native-qrcode-scanner';
 
 function onSuccess(e) {
   Linking.openURL(e.data).catch(err => {
-    Alert.alert('Error', 'Terjadi kesalahan saat mengakses kamera, silahkan coba kembali', [
+    Alert.alert('Error', 'Terjadi kesalahan saat mengakses url, silahkan coba kembali', [
       {
         text: 'OK',
       },
